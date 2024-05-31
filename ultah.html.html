@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Sayang</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .card {
+            background-color: #75c9db;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #da03f6;
+            margin: 0;
+            animation: fadeIn 2s;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #1608dd;
+            animation: fadeIn 4s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .balloons {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            opacity: 0;
+            animation: balloons 4s forwards;
+        }
+
+        .balloon {
+            width: 50px;
+            height: 70px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+            position: relative;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        .balloon::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            width: 2px;
+            height: 20px;
+            background-color: #333;
+        }
+
+        .balloon:nth-child(2) {
+            background-color: #87ceeb;
+            animation-duration: 5s;
+        }
+
+        .balloon:nth-child(3) {
+            background-color: #90ee90;
+            animation-duration: 7s;
+        }
+
+        @keyframes balloons {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+    <div class="card">
+        <h1>SELAMAT ULANG TAHUN</h1>
+        <h1>KESAYANGAN AYAH DAN ABILLA!</h1>
+        <p>Semoga Panjang Umur</p>
+        <P>Sehat Selalu</P>
+        <p>Berkah Rejekinya</p>
+        <p>Selalu dalam Lindungan ALLAH SWT</p>
+        <p>“Hal yang benar-benar ingin aku lakukan dalam hidupku adalah memastikan kamu selalu bahagia bersamaku. Bukan hanya hari ini di hari ulang tahunmu, tetapi juga di hari-hari lainnya. Selamat ulang tahun, istriku!".</p>
+    </div>
+</body>
+</html>
